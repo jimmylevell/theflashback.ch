@@ -16,7 +16,7 @@ James Level
  *	Biographie: kurze Vorstellung der Band
  * 	Kontaktformular: Für Konzertanfragen
 *	Nächsten Auftritte
- * Eine Webseite, welcher die nächsten Auftritte angezeigt werden.
+ * Eine Webseite, welcher die nächsteen Auftritte angezeigt werden.
 *	Repertoire
  *	Eine Webseite, welche die Songs von Youtube chronologisch darstellt.
 Stichwortartige Beschreibung der Bedienungsabläufe
