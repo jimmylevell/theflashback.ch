@@ -1,0 +1,173 @@
+@charset "utf-8";
+@import url(mini-reset.css);
+
+/* ----------------------------------- Allgemeines und Seitenkopf */
+
+body {
+    font-family: Calibri, serif;
+    background-color: #336789;
+}
+
+#content {
+    position: relative;
+    width: 770px;
+    margin: 20px auto 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+header img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#headerTitle {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    font-weight: bold;
+}
+
+header h1 {
+    position: relative;
+    color: #67819E;
+    background-color: #292829;
+    padding: 10px 50px;
+    font-size: 50px;
+}
+
+header h1 + p {
+    position: absolute;
+    color: #E8E9CB;
+    background-color: #336789;
+    right: 10px;
+    top: 70px;
+    padding: 3px 5px;
+}
+
+
+/* ----------------------------------- Navigation */
+
+nav {
+    height: 40px;
+    width: 100%;
+    /* Woher kommt dieser 4px Abstand nach dem Bild den ich entfernen muss? */
+    margin-top: -4px;
+}
+
+nav,
+nav li a {
+    background-color: #8F8E93;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    height: 100%;
+    display: inline-block;
+    color: #E8E9CB;
+    text-align: center;
+    padding: 10px 40px;
+    text-decoration: none;
+    min-width: 60px;
+}
+
+nav li a:hover {
+    background-color: #336789;
+}
+
+nav li.dropdown {
+    display: inline-block;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav .dropdown-content a {
+    display: block;
+    text-align: center;
+}
+
+
+/* ----------------------------------- Haupttext */
+
+main {
+    padding: 30px 350px 20px 50px;
+}
+
+main article section {
+    margin-bottom: 15px;
+}
+
+main article section:last-of-type {
+    margin-bottom: 30px;
+}
+
+main article section h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+main article footer > p {
+    margin-bottom: 15px;
+}
+
+
+/* ----------------------------------- Termin-Spalte */
+
+aside {
+    position: absolute;
+    width: 220px;
+    top: 240px;
+    right: 50px;
+    background-image: url(img/angebote_hg.jpg);
+    min-height: 420px;
+    background-repeat: no-repeat;
+    background-color: #E8E9CB;
+    background-position: bottom;
+}
+
+aside h1 {
+    height: 20px;
+    padding: 12px 0 8px 15px;
+    color: #E8E9CB;
+    background-color: #366789;
+}
+
+aside article {
+    min-height: 270px;
+    margin-bottom: 150px;
+}
+
+aside article span {
+    font-weight: bold;
+    display: block;
+}
+
+aside article section > p {
+    padding: 10px 15px;
+}
+
+aside footer {
+    position: absolute;
+    padding: 5px;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    color: #E8E9CB;
+}
+
+aside article p,
+aside footer {
+    font-size: 13px;
+}
