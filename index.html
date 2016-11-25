@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8"/> <!-- leeres Element, in diesem Fall über die codierung der webseite -->
+        <link rel="stylesheet" href="inc/css/style.css">
+        <!-- da ie 9 nicht html 5 fähig ist, hilft dieses js den IE 9 html 5 fähig zu machen-->
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+        <title> Spezial-Reisen 2011 </title>
+    </head>
+    <body>
+        <header> <!-- effektiver Inhalt auf der Webseite, inhaltliche oder naviationshilfen -->
+            <h1> Spezial-Reisen</h1>
+            <h4> Reise-Saison 2014</h4>
+        </header>
+        <nav>
+            <ul>
+                <li> <a href="#" title="Reiseziele"> Reiseziel </a> </li>
+                <li> <a href="#" title="Kontakt"> Kontakt </a> </li>
+                <li> <a href="#" title="Aktuelle Angebote"> Aktuelle Angebote </a> </li>
+            </ul>
+        </nav>
+        <article> <!-- einer in sich abgeschlossene zusammenhängender inhalt -->
+            <section> <!-- zum gruppieren von thematischen zusammenhängender inhalte -->
+                <h3> Seit zehn Jahren exklusive Reiseangebote </h3>
+                <p> In einem solchen Text fließt der Text gewissermaßen von einer Zeile in die nächste </p>
+            </section>
+			<section>
+				<!--Verweise -->
+				<!-- Verweis auf ein Element im gleichem Verzeichnis --> 
+				<p>Auf der <a href="kontakt.html">Kontaktseite</a> können Sie ...</p>
+				
+				<!-- relative Angabe, immer diese verwenden, immer / verwenden --> 
+				<p>Change to <a href="../en/index.html">english</a> language</p>
+				
+				<!-- absolute Angabe ab Webroot --> 
+				<p>Zurück zur <a href="/index.html">Hauptseite</a></p> 
+				
+				<!-- Überschrift als Verweisziel --> 
+				<h1 id="foo">Foo Title</h1>
+				<!-- Verweis auf die Überschrift -->
+				<a href="#foo">Springe zu Foo Title</a> 
+				
+				<!-- Verweis auf die Überschrift in anderem Dokument --> 
+				<a href="http://example.com/index.html#foo">Springe zu Foo Title</a>
+			</section>
+			<section>
+					<!-- wichtig für den inhalt -->
+				<h3> <strong> April 2014: 16.04 bis 25.04  </strong></h3>
+					<!-- schwerpunkt des inhaltes -->
+				<p> <em> Kairo und Pyramiden </em> </p>
+					<!-- aufmersamkeit auf diese stelle leiten, ohne irgendeine zusätzliche wichtigkeit oder einer impikation. Eine alternative Stimme zu vermitteln -->
+				<h3> <b> April 2014: 16.04 bis 25.04 </b> </h3>
+					<!-- anderes empfinden in den text zu interpretieren, andere ansichtsweise -->
+				<p> <i> Kreuzfahrt auf dem Nil </i> </p>
+					<!-- relevanter text in einem andere zusammenhang -->
+				<h3> <mark> Mai 2014: 12.05 bis 19.05 </mark> </h3>
+				<p> Tauchen am Roten Meer </p>
+			</section>
+			<section>
+				<div> <!-- div sollte nicht mehr verwendet werden -->
+					<!-- Ermöglicht Benutzereingaben, Interatkion mit dem Web-->
+					<form action="Script, welches Daten entgegennimmt" method="post"> 
+						<label>Text field <input type="text" value="hi"></label>
+						<label>Password <input type="password" value="hi"></label> 
+						<label>Textarea <textarea>hi</textarea></label> 
+						<label>Checkbox <input type="checkbox"></label> 
+												<!-- data-Anwendungsspezifische Informationen -->
+						<label>Radio button <input data-executer="james" type="radio" name="demo" checked></label> 
+						<label>Another one <input type="radio" name="demo"></label> 
+						<label>Button <button>Click me</button></label> 
+						<label>Select box 
+							<select name="cars">
+								<option value="volvo">Volvo</option> 
+								<option value="saab">Saab</option>
+								<option value="fiat">Fiat</option> 
+								<option value="audi">Audi</option> 
+							</select> 
+						</label> 
+						<input type="submit" value="Send">
+					</form>
+				</div>
+			</section>
+        </article>
+        <aside> <!-- hat nur am rande mit dem eigentlichen inhalt zu tun -->
+            <article>
+				<figure> <!-- für das einbetten von grafiken --> 
+					<!--responsive design für bilder, unterschiedliches bild anhand der grösse des bildschirmes-->
+					<picture> 
+						<source media="(min-width: 1024px)" srcset="feuerwehr-1600.jpg">
+						<source media="(min-width: 480px)" srcset="feuerwehr-480.jpg">
+						<!---Fallback--->
+						<img src="feuerwehr-480.jpg" srcset="feuerwehr-320.jpg" alt="Feuerwehrfest 2014">
+					</picture>
+					<!-- einbetten von videos in unterschiedlichen formaten -->
+					<video width="320" height="240" controls> 
+						<source src="movie.mp4" type="video/mp4"/> 
+						<source src="movie.ogg" type="video/ogg"/> 
+						<source src="movie.webm" type="video/webm"/> 
+						<!-- fallback if the browser doesn't support html 5-->
+						<object data="movie.mp4" width="320" height="240">
+							<embed src="movie.swf" width="320" height="240"/>
+						</object> 
+					</video>
+					<!-- audio formate einbinden-->
+					<audio controls>
+						<source src="horse.ogg" type="audio/ogg">
+						<source src="horse.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio> 
+					<figcaption>
+						Das neue SelfHTML-Logo von 2012 (<a href="#">weitere Informationen</a>)
+					</figcaption>
+				</figure>
+				<section>
+					<!-- progress fortschrittanzeige, meter für die anzeige eines socores (deutsches wort meter) -->
+						<p> Your score is <meter min="0" max="100" low="40" high="90" optimum="100" value="91"> A++ </meter> </p>
+						<p>Download is <progress> working </progress> </p>
+						<p> Giel is <progress value="75" max="100"> 3/4 complated </progress>
+
+					<!-- anzeige von daten in einem format, dass es der webbrowser und der benutzer lesen kann -->
+					<time datetime="2012-07-17T17:00">5pm on July 17th</time>
+
+					<!-- beschreibungen name + beschreibung-->
+					<dl>
+						<dt>Coffee</dt>
+						<dd>Black hot drink</dd>
+						<dt>Milk</dt>
+						<dd>White cold drink</dd>
+					</dl> 
+				</section>
+            </article>
+        </aside>
+        <footer>
+            <section>
+				<!-- der nachfolgende code ist nun editierbar -->
+				<table Contenteditable="true">
+					<thead>
+						<tr>
+							<td>January</td>
+							<td>$100</td>
+						</tr>
+						<tr>
+							<td>January</td>
+							<td>$100</td>
+						</tr>
+					</thead>
+					<tr>
+						<th>Month</th>
+						<th>Savings</th>
+					</tr>
+					<tr>
+						<td>January</td>
+						<td>$100</td>
+					</tr>
+					<tfoot>
+						<tr>
+							<td>January</td>
+							<td>$100</td>
+						</tr>
+						<tr>
+							<td>January</td>
+							<td>$100</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+			<address>
+                Peter Muster<br>
+                Dorfweg 36<br>
+                1234 Altenstadt<br>
+                Tel. 099 - 11 22 33<br>
+                Fax. 099 - 11 22 44<br>
+            </address>
+        </footer>
+    </body>
+</html>
