@@ -5,60 +5,26 @@
 
 body {
     font-family: Calibri, serif;
-    background-color: #336789;
+    background-color: black;
+    background-image: url("/img/background.jpg");
 }
 
 #content {
-    position: relative;
-    width: 770px;
-    margin: 20px auto 20px auto;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
 }
-
-header img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-#headerTitle {
-    position: absolute;
-    right: 0;
-    top: 100px;
-    font-weight: bold;
-}
-
-header h1 {
-    position: relative;
-    color: #67819E;
-    background-color: #292829;
-    padding: 10px 50px;
-    font-size: 50px;
-}
-
-header h1 + p {
-    position: absolute;
-    color: #E8E9CB;
-    background-color: #336789;
-    right: 10px;
-    top: 70px;
-    padding: 3px 5px;
-}
-
 
 /* ----------------------------------- Navigation */
 
-nav {
+header {
+    position: fixed;
+    top: 0;
     height: 40px;
     width: 100%;
-    /* Woher kommt dieser 4px Abstand nach dem Bild den ich entfernen muss? */
-    margin-top: -4px;
 }
 
 nav,
 nav li a {
-    background-color: #8F8E93;
+    background-color: #43414b;
 }
 
 nav li {
