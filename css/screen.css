@@ -4,13 +4,13 @@
 
 @font-face {
     font-family: Flashback;
-    src: url(/fonts/Flashback.ttf);
+    src: url(../fonts/Flashback.ttf);
 }
 
 body {
     margin: 0;
     background-color: black;
-    background-image: url("/img/band.jpg");
+    background-image: url("../img/band.jpg");
     /*background-size: cover;*/
     background-attachment: fixed;
 }
