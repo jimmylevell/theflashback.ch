@@ -4,9 +4,15 @@
 
 body {
     margin: 0;
-    font-family: "Courier New", Courier, monospace;
     background-color: black;
-    /*background-image: url("/img/background.jpg");*/
+    background-image: url("/img/band.jpg");
+    /*background-size: cover;*/
+    background-attachment: fixed;
+}
+
+body,
+input {
+    font-family: "Courier New", Courier, monospace;
 }
 
 #content {
@@ -39,8 +45,7 @@ nav ul {
     overflow: hidden;
     display: flex;
     text-align: center;
-        font-family: Flashback;
-
+    font-family: Flashback;
 }
 
 nav li {
@@ -70,7 +75,6 @@ nav .dropdown:hover .dropbtn {
 
 nav li.dropdown {
     display: inline-block;
-
 }
 
 nav .dropdown-content {
@@ -79,7 +83,6 @@ nav .dropdown-content {
     opacity: 0;
     border: 1px solid black;
     border-top: 0;
-
 }
 
 nav .dropdown-content a {
@@ -97,7 +100,6 @@ nav .dropdown:hover .dropdown-content {
     height: auto;
     opacity: 1;
     transition: .25s;
-
 }
 
 
@@ -131,7 +133,7 @@ main article h1 {
 }
 
 main article section h2 {
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 
 main article section {
@@ -142,9 +144,48 @@ main article section:last-of-type {
     margin-bottom: 30px;
 }
 
-
 main article footer > p {
     margin-bottom: 15px;
+}
+
+
+/* form */
+
+form .row {
+    margin-bottom: 15px;
+}
+
+
+/* button */
+
+input[type="button"],
+input[type="submit"] {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* anchor offset */
+a.anchor {
+    display: block;
+    position: relative;
+    top: -95px;
+    visibility: hidden;
+}
+
+/* table */
+
+.concerts_table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.concerts_table th,
+.concerts_table td {
+    text-align: left;
 }
 
 
