@@ -23,6 +23,7 @@ header {
     width: 100%;
     background-color: white;
     z-index: 9;
+    box-shadow: 1px 1px 1px black;
 }
 
 nav {
@@ -38,6 +39,8 @@ nav ul {
     overflow: hidden;
     display: flex;
     text-align: center;
+        font-family: Flashback;
+
 }
 
 nav li {
@@ -56,7 +59,8 @@ nav .dropbtn {
     text-decoration: none;
     white-space: nowrap;
     text-transform: uppercase;
-
+    font-family: "Flashback";
+    line-height: 20px;
 }
 
 nav li a:hover,
@@ -84,7 +88,7 @@ nav .dropdown-content a {
     text-decoration: none;
     display: block;
     text-align: center;
-    transition: .25s;
+    transition: color .25s;
 }
 
 nav .dropdown-content a:hover {}
@@ -108,13 +112,14 @@ main {
 main article {
     position: relative;
     background-color: white;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     padding: 30px;
     border: 5px solid black;
     outline: 15px solid white;
 }
 
 main article h1 {
+    font-family: "Flashback";
     text-transform: uppercase;
     position: absolute;
     top: -5px;
@@ -122,7 +127,7 @@ main article h1 {
     background-color: white;
     margin: 0;
     padding: 0 10px;
-    line-height: 5px;
+    line-height: 10px;
 }
 
 main article section h2 {
@@ -140,4 +145,12 @@ main article section:last-of-type {
 
 main article footer > p {
     margin-bottom: 15px;
+}
+
+
+/* fonts */
+
+@font-face {
+    font-family: Flashback;
+    src: url(/fonts/Flashback.ttf);
 }

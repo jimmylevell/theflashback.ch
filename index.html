@@ -1,75 +1,44 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="utf-8">
     <title>The Flashback</title>
-
     <link href="css/screen.css" rel="stylesheet" media="screen">
-
     <meta name="description" content="The Flashback Fanpage">
     <meta name="keywords" content="The Flashback">
     <meta name="robots" content="index, follow">
-
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
 </head>
 
 <body>
     <div id="content">
-
         <header>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#about" class="dropbtn">About</a>
-                        <div class="dropdown-content">
-                            <a href="#about_us">About us</a>
-                            <a href="#about_contact_us">Contact us</a>
-                        </div>
+                    <li class="dropdown"> <a href="#about" class="dropbtn">About</a>
+                        <div class="dropdown-content"> <a href="#about_us">About us</a> <a href="#about_contact_us">Contact us</a> </div>
                     </li>
-                    <li class="dropdown">
-                        <a href="#concerts" class="dropbtn">Concerts</a>
-                        <div class="dropdown-content">
-                            <a href="#concerts_upcoming">Upcoming</a>
-                            <a href="#concerts_history">History</a>
-                        </div>
+                    <li class="dropdown"> <a href="#concerts" class="dropbtn">Concerts</a>
+                        <div class="dropdown-content"> <a href="#concerts_upcoming">Upcoming</a> <a href="#concerts_history">History</a> </div>
                     </li>
-                    <li class="dropdown">
-                        <a href="#media" class="dropbtn">Media</a>
-                        <div class="dropdown-content">
-                            <a href="#media_pictures">Pictures</a>
-                            <a href="#media_videos">Videos</a>
-                        </div>
+                    <li class="dropdown"> <a href="#media" class="dropbtn">Media</a>
+                        <div class="dropdown-content"> <a href="#media_pictures">Pictures</a> <a href="#media_videos">Videos</a> </div>
                     </li>
                 </ul>
             </nav>
         </header>
-
         <main>
-
-            <article>
-                <h1>About</h1>
-                <section>
-                    <h2>About us</h2>
-
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                    parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-                    pellentesque eu, pretium quis, sem.</p>
-                </section>
-                <section>
-                    <h2>Contact us</h2>
-
-                    <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
-                    nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
-                    vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-                    Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-                    tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-                    enim.</p>
-                </section>
-          </article>
-
+            <article id="about" w3-include-html="sites/about.html"></article>
+            <article id="about" w3-include-html="sites/about.html"></article>
+            <article id="about" w3-include-html="sites/about.html"></article>
         </main>
     </div>
 </body>
+<script>
+    w3IncludeHTML();
+</script>
+
 </html>
