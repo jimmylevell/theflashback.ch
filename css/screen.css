@@ -34,12 +34,13 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
 }
 
 nav li {
-    width: auto;
     margin-left: 30px;
     float: left;
+    flex: 1;
 }
 
 nav li a,
