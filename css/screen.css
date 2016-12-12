@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: Calibri, serif;
+    font-family: "Courier New", Courier, monospace;
     background-color: black;
     /*background-image: url("/img/background.jpg");*/
 }
@@ -19,8 +19,10 @@ body {
 header {
     position: fixed;
     top: 0;
-    height: 40px;
+    height: 47px;
     width: 100%;
+    background-color: white;
+    z-index: 9;
 }
 
 nav {
@@ -43,38 +45,41 @@ nav li {
     flex: 1;
 }
 
-
 nav li a,
 nav .dropbtn {
     display: inline-block;
-    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
     text-align: center;
-    padding: 14px 25px;
+    padding: 14px 25px 13px 25px;
     text-decoration: none;
-        white-space: nowrap;
+    white-space: nowrap;
+    text-transform: uppercase;
 
 }
 
 nav li a:hover,
 nav .dropdown:hover .dropbtn {
-    text-shadow: 0 0 3px red;
     color: red;
 }
 
 nav li.dropdown {
     display: inline-block;
+
 }
 
 nav .dropdown-content {
-    position: relatve;
     display: block;
-    z-index: 9;
     height: 0;
     opacity: 0;
+    border: 1px solid black;
+    border-top: 0;
+
 }
 
 nav .dropdown-content a {
-    color: white;
+    background-color: white;
     padding: 12px 25px;
     text-decoration: none;
     display: block;
@@ -82,26 +87,46 @@ nav .dropdown-content a {
     transition: .25s;
 }
 
-nav .dropdown-content a:hover {
-}
+nav .dropdown-content a:hover {}
 
 nav .dropdown:hover .dropdown-content {
     height: auto;
     opacity: 1;
     transition: .25s;
+
 }
 
 
 /* ----------------------------------- Haupttext */
 
 main {
-    margin: 50px auto;
+    margin: 100px auto;
     width: 50%;
     min-width: 700px;
 }
 
 main article {
-    border: solid 1px white;
+    position: relative;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 30px;
+    border: 5px solid black;
+    outline: 15px solid white;
+}
+
+main article h1 {
+    text-transform: uppercase;
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    background-color: white;
+    margin: 0;
+    padding: 0 10px;
+    line-height: 5px;
+}
+
+main article section h2 {
+    margin: 0;
 }
 
 main article section {
@@ -112,10 +137,6 @@ main article section:last-of-type {
     margin-bottom: 30px;
 }
 
-main article section h2 {
-    font-weight: bold;
-    margin-bottom: 15px;
-}
 
 main article footer > p {
     margin-bottom: 15px;
