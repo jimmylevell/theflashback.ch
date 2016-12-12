@@ -20,7 +20,7 @@ input {
     font-family: "Courier New", Courier, monospace;
 }
 
-#content {
+#content, nav {
     min-width: 700px;
 }
 
@@ -39,7 +39,6 @@ header {
 
 nav {
     width: 50%;
-    min-width: 500px;
     margin: auto;
 }
 
