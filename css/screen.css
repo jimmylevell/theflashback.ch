@@ -112,6 +112,7 @@ nav .dropdown:hover .dropdown-content {
 main {
     margin: 100px auto;
     width: 100%;
+    display: block;
 }
 
 main article {
