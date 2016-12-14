@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+      <meta charset="utf-8">
+      <title>The Flashback</title>
+      <link href="css/screen.css" rel="stylesheet" media="screen">
+      <meta name="description" content="The Flashback Fanpage">
+      <meta name="keywords" content="The Flashback">
+      <meta name="robots" content="index, follow">
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon" />
+      <script src="js/w3data.js"></script>
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>The Flashback</title>
-    <link href="css/screen.css" rel="stylesheet" media="screen">
-    <meta name="description" content="The Flashback Fanpage">
-    <meta name="keywords" content="The Flashback">
-    <meta name="robots" content="index, follow">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon" />
-    <script src="js/w3data.js"></script>
-</head>
+  <body>
+      <header>
+          <nav>
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li class="dropdown"> <a href="#about" class="dropbtn">About</a>
+                      <div class="dropdown-content"> <a href="#about_us">About us</a> <a href="#about_contact_us">Contact us</a> </div>
+                  </li>
+                  <li class="dropdown"> <a href="#concerts" class="dropbtn">Concerts</a>
+                      <div class="dropdown-content"> <a href="#concerts_upcoming">Upcoming</a> <a href="#concerts_history">History</a> </div>
+                  </li>
+                  <li class="dropdown"> <a href="#media" class="dropbtn">Gallery</a>
+                      <div class="dropdown-content"> <a href="#media_pictures">Pictures</a> <a href="#media_videos">Videos</a> </div>
+                  </li>
+              </ul>
+          </nav>
+      </header>
+      <main>
+          <article w3-include-html="sites/home.html"></article>
+          <article w3-include-html="sites/about.html"></article>
+          <article w3-include-html="sites/concerts.html"></article>
+          <article w3-include-html="sites/media.html"></article>
+      </main>
+      <footer>
+          <p> Copyright © 2016. All Rights Reserved @ The Flashback | <a href="mailto:kontakt@theflashback.ch"> kontakt@theflashback.ch </a> | powered by ozçema & leveljam</p>
+      </footer>
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li class="dropdown"> <a href="#about" class="dropbtn">About</a>
-                    <div class="dropdown-content"> <a href="#about_us">About us</a> <a href="#about_contact_us">Contact us</a> </div>
-                </li>
-                <li class="dropdown"> <a href="#concerts" class="dropbtn">Concerts</a>
-                    <div class="dropdown-content"> <a href="#concerts_upcoming">Upcoming</a> <a href="#concerts_history">History</a> </div>
-                </li>
-                <li class="dropdown"> <a href="#media" class="dropbtn">Gallery</a>
-                    <div class="dropdown-content"> <a href="#media_pictures">Pictures</a> <a href="#media_videos">Videos</a> </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article w3-include-html="sites/home.html"></article>
-        <article w3-include-html="sites/about.html"></article>
-        <article w3-include-html="sites/concerts.html"></article>
-        <article w3-include-html="sites/media.html"></article>
-    </main>
-    <footer>
-        <p> Copyright © 2016. All Rights Reserved @ The Flashback | <a href="mailto:kontakt@theflashback.ch"> kontakt@theflashback.ch </a> | powered by ozçema & leveljam</p>
-    </footer>
-</body>
-<script>
-    w3IncludeHTML();
-</script>
-
+      <!-- according to the validator this tag must be in the body element !-->
+      <script>
+          w3IncludeHTML();
+      </script>
+  </body>
 </html>

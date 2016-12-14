@@ -50,3 +50,11 @@ Nachfolgend wird die Ordnerstruktur vorgestellt.
  * \gallery - Gallery Fotos, jeder Auftritt wird in einem einzelnen Unterordner gespeichert
 * \sites - Alle Seiten, welche von index.html geladen werden befinden sich hier
 * \js - JavaScripts
+
+## Bemerkungen
+### Validierung der Webseite
+Die Webseite wurde validiert. Folgende Fehler wurden aktzeptiert:
+* Attribute w3-include-html not allowed on element article at this point.
+ * Dieser Tag sollte mit einem data- Attribut ersetzt werden. Jedoch wird dieser Tag vom Script vom w3schools vorgegeben und aus diesem Grund nicht angepasst.
+* Article lacks heading. Consider using h2-h6 elements to add identifying headings to all articles.
+ * in den gemeldeten Abschnitten wäre ein Head überflüssing
