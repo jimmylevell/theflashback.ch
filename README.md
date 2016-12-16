@@ -14,18 +14,18 @@ Folgende Personen haben an der Entwicklung dieser Webseite mitgearbeitet:
 * Murat Özçetin  
 * James Levell  
 
-Für das CSS und HTML wurde kein Framework verwendetet. Lediglich für das Laden er unter Seiten wurde ein JavaScrpit von W3schools verwendet (Quelle im Code vermerkt).   
+Für das CSS und HTML wurde kein Framework verwendetet. Lediglich für das Laden der Unterseiten wurde ein JavaScrpit von W3schools verwendet (Quelle im Code vermerkt).   
 
 ## Anfoderungen
 Die Webseite soll die wichtigsten Informationen der Band rasch und übersichtlich darstellen. Es sollen folgende Informationen einfach und übersichtlich präsentiert werden:
-* Information über Band
+* Information über die Band
 * Möglichkeit die Band zu kontaktieren mit einigen Pflichtfeldern
 * Eine Diskographie über die Songs, welche sich auf Youtube befinden
 * Eine Liste von den nächsten Auftritten soll ersichtlich sein. Auch sollen die bereits vergangenen Auftritte angezeigt werden können.
 
 ## Inhalt / Struktur
 ### Logischer Inhalt
-Nachfolgend wird der logische Aufbau der Webseite kurz vorgestellt. Dies ist ergänzend zum MarkUp im \_Doku Ordner. Die Webseite wird als Onpager organisisert. Dies bedeutet, dass alle Inhalt sich einer Webseite befinden und durch alle Inhalte gescrollt werden kann. Mithilfe der Navigationsleiste kann zu den jeweiligen Themen gesprungen werden.
+Nachfolgend wird der logische Aufbau der Webseite kurz vorgestellt. Dies ist ergänzend zum MarkUp im \_Doku Ordner. Die Webseite wird als singlepage organisisert. Dies bedeutet, dass alle Inhalt sich einer Webseite befinden und durch alle Inhalte gescrollt werden kann. Mithilfe der Navigationsleiste kann zu den jeweiligen Themen gesprungen werden.
 
 *	Startseite / Home  
  *	Band-Foto & Beschreibung kurz & knapp  
