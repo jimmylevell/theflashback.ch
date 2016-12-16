@@ -11,7 +11,7 @@ body {
     margin: 0;
     background-color: black;
     background-image: url("../img/band.jpg");
-    /*background-size: cover;*/
+    background-size: cover;
     background-attachment: fixed;
 }
 
