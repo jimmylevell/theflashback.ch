@@ -190,6 +190,7 @@ main input[type="submit"] {
 main article section .img-text {
     float: right;
     width: 55%;
+    padding-top: 10%;
 }
 
 
