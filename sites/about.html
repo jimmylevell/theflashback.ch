@@ -1,52 +1,52 @@
 <h1>About</h1>
 <a class="anchor" id="about"></a>
 <section>
-    <h2>About us</h2>
-    <a class="anchor" id="about_us"></a>
-    <section>
-      <img src="img/aboutUs/cyrill.jpg" width="40%" alt="Foto des Lead Sängers"/>
-      <p class="img-text">Cyrill: Lead Sänger </p>
-    </section>
-    <section>
-      <img src="img/aboutUs/cyril.jpg" width="40%" alt="Foto des Lead Sängers"/>
-      <p class="img-text">Cyril: Bassist und Mandolinischt</p>
-    </section>
-    <section>
-      <img src="img/aboutUs/florence.jpg" width="40%" alt="Foto des Lead Sängers"/>
-      <p class="img-text">Flo: Leadgitarristin</p>
-    </section>
-    <section>
-      <img src="img/aboutUs/james.jpg" width="40%" alt="Foto des Lead Sängers"/>
-      <p class="img-text">James: Schlagzeuger</p>
-    </section>
-    <section>
-      <img src="img/aboutUs/michel.jpg" width="40%" alt="Foto des Lead Sängers"/>
-      <p class="img-text">Michel: Techniker</p>
-    </section>
+	<h2>About us</h2>
+	<a class="anchor" id="about_us"></a>
+	<section>
+	  <img src="img/aboutUs/cyrill.jpg" width="40%" alt="Foto des Lead Sängers"/>
+	  <p class="img-text">Cyrill: Lead Sänger </p>
+	</section>
+	<section>
+	  <img src="img/aboutUs/cyril.jpg" width="40%" alt="Foto des Lead Sängers"/>
+	  <p class="img-text">Cyril: Bassist und Mandolinischt</p>
+	</section>
+	<section>
+	  <img src="img/aboutUs/florence.jpg" width="40%" alt="Foto des Lead Sängers"/>
+	  <p class="img-text">Flo: Leadgitarristin</p>
+	</section>
+	<section>
+	  <img src="img/aboutUs/james.jpg" width="40%" alt="Foto des Lead Sängers"/>
+	  <p class="img-text">James: Schlagzeuger</p>
+	</section>
+	<section>
+	  <img src="img/aboutUs/michel.jpg" width="40%" alt="Foto des Lead Sängers"/>
+	  <p class="img-text">Michel: Techniker</p>
+	</section>
 </section>
 <section>
-    <h2>Contact us</h2>
-    <a class="anchor" id="about_contact_us"></a>
-    <p> Anfragen aller Art gerne über dieses Formular.</p>
-    <form action="helper/contactUs.php" method="post">
-        <div class="row">
-            <label for="name">Name:</label>
-            <br />
-            <input id="name" class="input" name="name" type="text" value="" size="30" />
-            <br />
-        </div>
-        <div class="row">
-            <label for="email">Email:</label>
-            <br />
-            <input id="email" class="input" name="email" type="text" value="" size="30" />
-            <br />
-        </div>
-        <div class="row">
-            <label for="message">Message:</label>
-            <br />
-            <textarea id="message" class="input" name="message"></textarea>
-            <br />
-        </div>
-        <input id="submit_button" type="button" value="Send email" />
-    </form>
+	<h2>Contact us</h2>
+	<a class="anchor" id="about_contact_us"></a>
+	<p> Anfragen aller Art gerne über dieses Formular.</p>
+	<form id="contactUs" action="sites/helper/contactUs.php" method="post">
+		<div class="row">
+			<label for="name">Name:</label>
+			<br />
+			<input id="name" class="input" name="name" type="text" value="" size="30" />
+			<br />
+		</div>
+		<div class="row">
+			<label for="email">Email:</label>
+			<br />
+			<input id="email" class="input" name="email" type="email" value="" size="30" />
+			<br />
+		</div>
+		<div class="row">
+			<label for="message">Message:</label>
+			<br />
+			<textarea id="message" class="input" name="message"></textarea>
+			<br />
+		</div>
+		<input id="submit_button" type="submit" value="Send email" />
+	</form>
 </section>
