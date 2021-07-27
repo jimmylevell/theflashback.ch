@@ -1,0 +1,53 @@
+name: Publish theflashback docker image
+
+on:
+  # Trigger the workflow on push
+  # but only for the master branch
+  push:
+    branches:
+      - master
+
+jobs:
+  push_to_registry:
+    name: Push theflashback docker images to GitHub Packages
+    runs-on: ubuntu-latest
+    
+    steps:
+      - 
+        name: Check out the repo
+        uses: actions/checkout@v2
+      -
+        name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+      -
+        name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      -
+        name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      -
+        name: Build and push theflashback docker
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          target: theflashback-deploy
+          tags: |
+            ghcr.io/jimmylevell/theflashback/theflashback:latest
+      - 
+        name: Deploy to swarm
+        uses: wshihadeh/docker-deployment-action@v2
+        with:
+          remote_docker_host: docker@5.9.138.216
+          ssh_private_key: ${{ secrets.DOCKER_SSH_PRIVATE_KEY }}
+          ssh_public_key: ${{ secrets.DOCKER_SSH_PUBLIC_KEY }}
+          deployment_mode: docker-swarm
+          copy_stack_file: true
+          pull_images_first: true
+          deploy_path: /home/docker/theflashback/
+          stack_file_name: docker-compose.prod.yml
+          keep_files: 2
+          args: --with-registry-auth theflashback
