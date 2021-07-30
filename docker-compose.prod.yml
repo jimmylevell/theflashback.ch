@@ -2,9 +2,7 @@ version: '3.9'
 services:
   theflashback:
     image: ghcr.io/jimmylevell/theflashback/theflashback:latest
-    restart: always
     networks:
-      - levell
       - traefik-public
     deploy:
       replicas: 1
@@ -28,6 +26,4 @@ services:
 
 networks:
   traefik-public:
-    external: true
-  levell:
     external: true

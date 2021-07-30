@@ -50,4 +50,4 @@ jobs:
           deploy_path: /home/docker/theflashback/
           stack_file_name: docker-compose.prod.yml
           keep_files: 2
-          args: --with-registry-auth theflashback
+          args: --with-registry-auth --prune theflashback
