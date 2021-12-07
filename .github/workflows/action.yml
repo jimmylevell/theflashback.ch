@@ -47,7 +47,7 @@ jobs:
           deployment_mode: docker-swarm
           copy_stack_file: true
           pull_images_first: true
-          deploy_path: /home/worker/theflashback/
+          deploy_path: /home/worker/levell/theflashback
           stack_file_name: docker-compose.prod.yml
           keep_files: 2
           args: --with-registry-auth --prune theflashback
