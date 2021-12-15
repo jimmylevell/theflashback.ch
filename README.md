@@ -1,4 +1,4 @@
-# Web Projekt - http://theflashback.ch  
+# Web Projekt - http://theflashback.ch   
 [![Publish theflashback docker image](https://github.com/jimmylevell/theflashback.ch/actions/workflows/action.yml/badge.svg?branch=master)](https://github.com/jimmylevell/theflashback.ch/actions/workflows/action.yml)  
 
 ## Prokjektidee  
