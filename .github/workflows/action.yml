@@ -2,6 +2,12 @@ name: Publish theflashback docker image
 
 # Controls when the workflow will run
 on:
+  # Trigger the workflow on push
+  # but only for the master branch
+  push:
+    branches:
+      - master
+      
   # runs once every month
   schedule:
     - cron: "0 3 1 * *"
