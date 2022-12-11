@@ -1,7 +1,7 @@
 ###############################################################################################
 # theflashback - BASE
 ###############################################################################################
-FROM nginx:latest as theflashback-base
+FROM nginx:1.23.2 as theflashback-base
 
 WORKDIR /usr/share/nginx/html
 
