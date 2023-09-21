@@ -5,8 +5,8 @@ services:
     networks:
       - traefik-public
     secrets:
-      - SMTP_USER
-      - SMTP_PASSWORD
+      - SMTP_GMAIL_USER
+      - SMTP_GMAIL_PASSWORD
     deploy:
       replicas: 1
       update_config:
@@ -32,7 +32,7 @@ networks:
     external: true
 
 secrets:
-  SMTP_USER:
+  SMTP_GMAIL_USER:
     external: true
-  SMTP_PASSWORD:
+  SMTP_GMAIL_PASSWORD:
     external: true
