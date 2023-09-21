@@ -4,6 +4,9 @@ services:
     image: ghcr.io/jimmylevell/theflashback/theflashback:latest
     networks:
       - traefik-public
+    secrets:
+      - SMTP_USER
+      - SMTP_PASSWORD
     deploy:
       replicas: 1
       update_config:
@@ -28,3 +31,8 @@ networks:
   traefik-public:
     external: true
 
+secrets:
+  SMTP_USER:
+    external: true
+  SMTP_PASSWORD:
+    external: true
