@@ -16,8 +16,8 @@ if (!empty($_POST)) {
 	$mail->Host = "smtp.gmail.com";
 	$mail->Port = 465; // or 587
 	$mail->IsHTML(true);
-	$mail->Username = rtrim(file_get_contents("/run/secrets/SMTP_USER"));
-	$mail->Password = rtrim(file_get_contents("/run/secrets/SMTP_PASSWORD"));
+	$mail->Username = rtrim(file_get_contents("/run/secrets/SMTP_GMAIL_USER"));
+	$mail->Password = rtrim(file_get_contents("/run/secrets/SMTP_GMAIL_PASSWORD"));
 	$mail->SetFrom("kontakt@theflashback.ch", "Kontakt The FlashBack");
 	$mail->Subject = "[theflashback] Neue Anfrage";
 	$mail->AddAddress("jimmy.levell@outlook.com");
