@@ -1,0 +1,11 @@
+.git
+.github
+.vscode
+.gitignore
+.devcontainer
+tsconfig.tsbuildinfo
+.env
+_docu
+Dockerfile
+docker-compose*
+README.md
