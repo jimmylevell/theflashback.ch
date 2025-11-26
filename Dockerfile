@@ -1,7 +1,7 @@
 ###############################################################################################
 # theflashback - BASE
 ###############################################################################################
-FROM php:8.4-apache as theflashback-base
+FROM php:8.5-apache as theflashback-base
 
 WORKDIR /usr/share/nginx/html
 
