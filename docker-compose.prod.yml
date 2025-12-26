@@ -16,7 +16,7 @@ services:
         condition: on-failure
       labels:
         - traefik.enable=true # enable traefik
-        - traefik.docker.network=traefik-public # put it in the same network as traefik
+        - traefik.swarm.network=traefik-public # put it in the same network as traefik
         - traefik.constraint-label=traefik-public # assign the same label as traefik so it can be discovered
         - traefik.http.routers.theflashback.rule=Host(`theflashback.ch`) # listen to port 80 for request to APP_DOMAIN (use together with the line below)
         - traefik.http.routers.theflashback.entrypoints=http
