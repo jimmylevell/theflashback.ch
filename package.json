@@ -1,0 +1,15 @@
+{
+  "name": "theflashback-ch",
+  "version": "1.0.0",
+  "description": "Website of theflashback.ch",
+  "author": "James Levell <hello@levell.ch>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "serve src",
+    "dev": "serve src --listen 3000"
+  },
+  "dependencies": {
+    "serve": "^14.2.6"
+  }
+}

@@ -3,26 +3,41 @@
 <section>
 	<h2>About us</h2>
 	<a class="anchor" id="about_us"></a>
-	<section>
-	  <img src="img/aboutUs/cyrill.jpg" width="40%" alt="Foto des Lead Sängers"/>
-	  <p class="img-text">Cyrill: Lead Sänger </p>
-	</section>
-	<section>
-	  <img src="img/aboutUs/cyril.jpg" width="40%" alt="Foto des Lead Sängers"/>
-	  <p class="img-text">Cyril: Bassist und Mandolinischt</p>
-	</section>
-	<section>
-	  <img src="img/aboutUs/florence.jpg" width="40%" alt="Foto des Lead Sängers"/>
-	  <p class="img-text">Flo: Leadgitarristin</p>
-	</section>
-	<section>
-	  <img src="img/aboutUs/james.jpg" width="40%" alt="Foto des Lead Sängers"/>
-	  <p class="img-text">James: Schlagzeuger</p>
-	</section>
-	<section>
-	  <img src="img/aboutUs/michel.jpg" width="40%" alt="Foto des Lead Sängers"/>
-	  <p class="img-text">Michel: Techniker</p>
-	</section>
+	<div class="member-card">
+		<img src="img/aboutUs/cyrill.jpg" alt="Foto des Lead Sängers" />
+		<div class="member-info">
+			<div class="member-name">Cyrill</div>
+			<div class="member-role">Lead Sänger</div>
+		</div>
+	</div>
+	<div class="member-card">
+		<img src="img/aboutUs/cyril.jpg" alt="Foto des Bassisten" />
+		<div class="member-info">
+			<div class="member-name">Cyril</div>
+			<div class="member-role">Bassist und Mandolinischt</div>
+		</div>
+	</div>
+	<div class="member-card">
+		<img src="img/aboutUs/florence.jpg" alt="Foto der Leadgitarristin" />
+		<div class="member-info">
+			<div class="member-name">Flo</div>
+			<div class="member-role">Leadgitarristin</div>
+		</div>
+	</div>
+	<div class="member-card">
+		<img src="img/aboutUs/james.jpg" alt="Foto des Schlagzeugers" />
+		<div class="member-info">
+			<div class="member-name">James</div>
+			<div class="member-role">Schlagzeuger</div>
+		</div>
+	</div>
+	<div class="member-card">
+		<img src="img/aboutUs/michel.jpg" alt="Foto des Technikers" />
+		<div class="member-info">
+			<div class="member-name">Michel</div>
+			<div class="member-role">Techniker</div>
+		</div>
+	</div>
 </section>
 <section>
 	<h2>Contact us</h2>
@@ -31,21 +46,15 @@
 	<form id="contactUs" action="sites/helper/contactUs.php" method="post">
 		<div class="row">
 			<label for="name">Name:</label>
-			<br />
 			<input id="name" class="input" name="name" type="text" value="" size="30" />
-			<br />
 		</div>
 		<div class="row">
 			<label for="email">Email:</label>
-			<br />
 			<input id="email" class="input" name="email" type="email" value="" size="30" />
-			<br />
 		</div>
 		<div class="row">
 			<label for="message">Message:</label>
-			<br />
 			<textarea id="message" class="input" name="message"></textarea>
-			<br />
 		</div>
 		<input id="submit_button" type="submit" value="Send email" />
 	</form>
