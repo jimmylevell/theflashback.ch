@@ -25,7 +25,7 @@ services:
         - traefik.http.routers.theflashback-secured.rule=Host(`theflashback.ch`) # listen to port 443 for request to APP_DOMAIN (use together with the line below)
         - traefik.http.routers.theflashback-secured.entrypoints=https
         - traefik.http.routers.theflashback-secured.tls.certresolver=le # use the Let's Encrypt certificate we set up earlier
-        - traefik.http.services.theflashback-secured.loadbalancer.server.port=80 # ask Traefik to search for port service container
+        - traefik.http.services.theflashback-secured.loadbalancer.server.port=8080 # ask Traefik to search for port service container
 
 networks:
   traefik-public:
